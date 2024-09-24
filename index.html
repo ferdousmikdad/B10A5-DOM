@@ -1,9 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ph B10 Assignment-05</title>
+
+    <!-- Daisy Ui cdn-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Tailwind CSS cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Load Lexend font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#B4F461",
+              primaryHover: "#C8FF81",
+              colorBg: "#F9F7F3",
+            },
+            fontFamily: {
+              lexend: ["Lexend", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body></body>
+
+  <body class="font-lexend">
+    <header class="relative z-99 sticky top-0 backdrop-blur-3xl">
+      <nav class="bg-[rgba(255,244,149,0.2)]">
+        <div class="max-w-6xl mx-auto flex justify-between items-center py-6">
+          <!-- Blog Button -->
+          <div>
+            <button
+              class="btn border-none bg-primary hover:bg-primaryHover hover:border-none text-xl px-8"
+            >
+              Blog
+            </button>
+          </div>
+          <!-- Logo -->
+          <div class="flex justify-center items-center">
+            <img class="mr-2" src="assets/logo.png" alt="Logo" />
+            <h3 class="text-xl font-semibold">Donate Bangladesh</h3>
+          </div>
+          <!-- Donated need amount -->
+          <div class="flex justify-center items-center">
+            <img class="mr-2" src="assets/coin.png" alt="" />
+            <h3 class="text-xl text-gray-500 font-semibold">5500 BDT</h3>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Donation and History Button -->
+      <div class="flex justify-center items-center gap-8 pt-12 pb-6">
+        <button
+          class="btn text-xl px-8 bg-inherit border border-gray-300 hover:border-none hover:bg-primary"
+        >
+          Donation
+        </button>
+        <button
+          class="btn text-xl px-8 bg-inherit border border-gray-300 hover:border-none hover:bg-primary"
+        >
+          History
+        </button>
+      </div>
+    </header>
+
+    <!-- Main section -->
+    <main class="max-w-6xl mx-auto">
+      <!-- Donation Section -->
+      <div>
+        <!-- Card-1 -->
+        <div class="border border-gray-300 rounded-xl mt-8 flex items-stretch">
+          <!-- Image Section -->
+          <img
+            class="p-8 h-full object-cover"
+            src="assets/noakhali.png"
+            alt="noakhali"
+          />
+
+          <!-- Blog Content -->
+          <div class="pr-8 py-8 flex flex-col justify-between flex-grow">
+            <!-- Donation Amount -->
+            <div
+              class="flex items-center bg-gray-100 py-2 px-4 rounded-lg w-fit mb-4"
+            >
+              <img class="mr-2" src="assets/coin.png" alt="coin" />
+              <h3>0 BDT</h3>
+            </div>
+
+            <!-- Title -->
+            <h3 class="text-xl font-bold mb-4">
+              Donate for Flood at Noakhali, Bangladesh
+            </h3>
+
+            <!-- Description -->
+            <p class="mb-6 flex-grow font-light">
+              The recent floods in Noakhali have caused significant damage to
+              homes infrastructure. Your donation will help provide essential
+              supplies and to those affected by this disaster. Every
+              contribution, big or small, makes difference. Please join us in
+              supporting the relief efforts and making a positive impact on the
+              lives of those in need.
+            </p>
+
+            <!-- Input and Button -->
+            <div>
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered w-full mb-4"
+              />
+              <button
+                class="btn w-full text-lg bg-primary hover:bg-primaryHover hover:border-none"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card-2 -->
+        <div class="border border-gray-300 rounded-xl mt-8 flex items-stretch">
+          <!-- Image Section -->
+          <img
+            class="p-8 h-full object-cover"
+            src="assets/noakhali.png"
+            alt="noakhali"
+          />
+
+          <!-- Blog Content -->
+          <div class="pr-8 py-8 flex flex-col justify-between flex-grow">
+            <!-- Donation Amount -->
+            <div
+              class="flex items-center bg-gray-100 py-2 px-4 rounded-lg w-fit mb-4"
+            >
+              <img class="mr-2" src="assets/coin.png" alt="coin" />
+              <h3>600 BDT</h3>
+            </div>
+
+            <!-- Title -->
+            <h3 class="text-xl font-bold mb-4">
+              Donate for Flood Relief in Feni,Bangladesh
+            </h3>
+
+            <!-- Description -->
+            <p class="mb-6 flex-grow font-light">
+              The recent floods in Feni have caused severe disruption. Your
+              donation will provide essential aid, including food, water, and
+              medical supplies, to those affected. Every contribution helps
+              rebuild lives. Please consider donating today to support those in
+              need.
+            </p>
+
+            <!-- Input and Button -->
+            <div>
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered w-full mb-4"
+              />
+              <button
+                class="btn w-full text-lg bg-primary hover:bg-primaryHover hover:border-none"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card-3 -->
+        <div class="border border-gray-300 rounded-xl mt-8 flex items-stretch">
+          <!-- Image Section -->
+          <img
+            class="p-8 h-full object-cover"
+            src="assets/noakhali.png"
+            alt="noakhali"
+          />
+
+          <!-- Blog Content -->
+          <div class="pr-8 py-8 flex flex-col justify-between flex-grow">
+            <!-- Donation Amount -->
+            <div
+              class="flex items-center bg-gray-100 py-2 px-4 rounded-lg w-fit mb-4"
+            >
+              <img class="mr-2" src="assets/coin.png" alt="coin" />
+              <h3>2400 BDT</h3>
+            </div>
+
+            <!-- Title -->
+            <h3 class="text-xl font-bold mb-4">
+              Aid for Injured in the Quota Movement
+            </h3>
+
+            <!-- Description -->
+            <p class="mb-6 flex-grow font-light">
+              The recent Quota movement has caused injuries and hardship. Your
+              donation will provide medical aid and support to those affected.
+              Every contribution helps their recovery. Please consider donating
+              to support them in this time of need.
+            </p>
+
+            <!-- Input and Button -->
+            <div>
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered w-full mb-4"
+              />
+              <button
+                class="btn w-full text-lg bg-primary hover:bg-primaryHover hover:border-none"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-colorBg py-4 mt-8">
+      <p class="text-center">© 2023, Donate Bangladesh. All right reserved.</p>
+    </footer>
+  </body>
 </html>
