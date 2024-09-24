@@ -102,7 +102,7 @@
               class="flex items-center bg-gray-100 py-2 px-4 rounded-lg w-fit mb-4"
             >
               <img class="mr-2" src="assets/coin.png" alt="coin" />
-              <h3>0 BDT</h3>
+              <h3><span id="noakhali-balance">0</span> BDT</h3>
             </div>
 
             <!-- Title -->
@@ -123,11 +123,13 @@
             <!-- Input and Button -->
             <div>
               <input
+                id="input-field-noakhali"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full mb-4"
               />
               <button
+                id="btn-noakhali-donation"
                 class="btn w-full text-lg bg-primary hover:bg-primaryHover hover:border-none"
               >
                 Donate Now
@@ -253,5 +255,6 @@
     <script src="js/featurs.js"></script>
     <script src="js/utilities.js"></script>
     <script src="js/blog.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
