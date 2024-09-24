@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ph B10 Assignment-05</title>
+
+    <!-- Daisy Ui cdn-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Tailwind CSS cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Load Lexend font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#B4F461",
+              primaryHover: "#C8FF81",
+              colorBg: "#F9F7F3",
+            },
+            fontFamily: {
+              lexend: ["Lexend", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-lexend">
+    <header class="relative z-9999 sticky top-0 backdrop-blur-3xl">
+      <nav class="bg-[rgba(229,255,114,0.1)]">
+        <div class="max-w-6xl mx-auto flex justify-between items-center py-6">
+          <!-- Blog Button -->
+          <div>
+            <button
+              class="btn border-none bg-primary hover:bg-primaryHover hover:border-none text-xl px-8"
+            >
+              Home
+            </button>
+          </div>
+          <!-- Logo -->
+          <div class="flex justify-center items-center">
+            <img class="mr-2" src="assets/logo.png" alt="Logo" />
+            <h3 class="text-xl font-semibold">Donate Bangladesh</h3>
+          </div>
+          <!-- Donated need amount -->
+          <div class="flex justify-center items-center">
+            <img class="mr-2" src="assets/coin.png" alt="" />
+            <h3 class="text-xl text-gray-500 font-semibold">5500 BDT</h3>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main section -->
+    <main class="max-w-6xl mx-auto mt-8">
+      <div>
+        <h3 class="text-3xl font-bold mb-6">Important FAQ</h3>
+        <div class="join join-vertical w-full">
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              What is the Document Object Model (DOM)?
+            </div>
+            <div class="collapse-content">
+              <p>
+                The Document Object Model (DOM) is a programming interface that
+                represents an HTML or XML document as a hierarchical tree of
+                objects. Each element, attribute, and text node is a part of
+                this tree, with the document itself as the root. The DOM enables
+                developers to dynamically manipulate the document using
+                languages like JavaScript, allowing them to add, remove, or
+                modify elements and respond to user events without reloading the
+                page. This capability makes the DOM essential for creating
+                interactive and responsive web applications.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you select an element from the DOM?
+            </div>
+            <div class="collapse-content">
+              <p>
+                To select an element from the DOM in JavaScript, several methods
+                can be used. The
+                <code class="bg-gray-200 text-gray-800 px-1 rounded"
+                  >getElementById</code
+                >
+                method allows you to select an element by its unique ID, while
+                <code class="bg-gray-200 text-gray-800 px-1 rounded"
+                  >getElementsByClassName</code
+                >
+                selects all elements with a specified class name, returning a
+                live HTMLCollection. Similarly, getElementsByTagName selects all
+                elements with a given tag name. For more flexible selections,
+                <code class="bg-gray-200 text-gray-800 px-1 rounded"
+                  >querySelector</code
+                >
+                can be employed to select the first element that matches a CSS
+                selector, whereas
+                <code class="bg-gray-200 text-gray-800 px-1 rounded"
+                  >querySelectorAll</code
+                >
+                retrieves all matching elements, returning a static NodeList.
+                These methods enable developers to effectively access and
+                manipulate DOM elements for dynamic web interactions.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              What is event delegation in the context of the DOM, and why is it
+              useful?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Event delegation is a technique in the DOM where a single event
+                listener is attached to a parent element instead of individual
+                listeners for each child element. This parent listens for events
+                that bubble up from its children. It’s useful because it
+                improves performance by reducing memory usage, simplifies event
+                handling for dynamically added elements, and makes the code
+                cleaner by centralizing logic in one place. Overall, event
+                delegation enhances efficiency and maintainability in web
+                development.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you manipulate an element's attribute and styes using the
+              DOM?
+            </div>
+            <div class="collapse-content">
+              <p>
+                To manipulate an element's attributes and styles using the DOM,
+                you can utilize JavaScript methods and properties. For
+                attributes, you can retrieve values with
+                <code class="bg-gray-200 text-gray-800 px-1 rounded"
+                  >getAttribute()</code
+                >, set new values using
+                <code class="bg-gray-200 text-gray-800 px-1 rounded"
+                  >setAttribute()</code
+                >, and remove attributes with
+                <code class="bg-gray-200 text-gray-800 px-1 rounded"
+                  >removeAttribute()</code
+                >. For styles, you can change inline styles directly through the
+                style property, allowing you to modify properties like text
+                color and background color. To get the computed styles of an
+                element, you can use
+                <code class="bg-gray-200 text-gray-800 px-1 rounded"
+                  >getComputedStyle()</code
+                >, which provides the current applied styles. Additionally, you
+                can reset or remove specific styles by setting them to an empty
+                string or using the
+                <code class="bg-gray-200 text-gray-800 px-1 rounded"
+                  >removeProperty()</code
+                >
+                method. These techniques enable dynamic and responsive
+                adjustments to your webpage based on user interactions or
+                events.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <footer class="bg-colorBg py-4 mt-8">
+      <p class="text-center">© 2023, Donate Bangladesh. All right reserved.</p>
+    </footer> -->
+  </body>
+</html>
