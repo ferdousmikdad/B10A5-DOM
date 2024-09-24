@@ -68,12 +68,14 @@
       <!-- Donation and History Button -->
       <div class="flex justify-center items-center gap-8 pt-12 pb-6">
         <button
-          class="btn text-xl px-8 bg-inherit border border-gray-300 hover:border-none hover:bg-primary"
+          id="btnShowDonation"
+          class="btn text-xl px-8 bg-primary active:bg-primary border border-gray-300 hover:border-none hover:bg-primary"
         >
           Donation
         </button>
         <button
-          class="btn text-xl px-8 bg-inherit border border-gray-300 hover:border-none hover:bg-primary"
+          id="btnShowHistory"
+          class="btn text-xl px-8 bg-inherit active:bg-primary border border-gray-300 hover:border-none hover:bg-primary"
         >
           History
         </button>
@@ -83,7 +85,7 @@
     <!-- Main section -->
     <main class="max-w-6xl mx-auto">
       <!-- Donation Section -->
-      <div>
+      <div id="donationSection">
         <!-- Card-1 -->
         <div class="border border-gray-300 rounded-xl mt-8 flex items-stretch">
           <!-- Image Section -->
@@ -160,11 +162,15 @@
 
             <!-- Description -->
             <p class="mb-6 flex-grow font-light">
-              The recent floods in Feni have caused severe disruption. Your
-              donation will provide essential aid, including food, water, and
-              medical supplies, to those affected. Every contribution helps
-              rebuild lives. Please consider donating today to support those in
-              need.
+              The recent floods in Feni have caused widespread devastation,
+              severely disrupting daily life and displacing many families. Your
+              generous donation will help provide essential aid such as food,
+              clean water, shelter, and medical supplies to those in desperate
+              need. Every contribution, whether big or small, plays a crucial
+              role in rebuilding the affected communities and restoring hope.
+              Please consider donating today to support the recovery efforts and
+              make a meaningful difference in the lives of those impacted by
+              this disaster.
             </p>
 
             <!-- Input and Button -->
@@ -209,10 +215,13 @@
 
             <!-- Description -->
             <p class="mb-6 flex-grow font-light">
-              The recent Quota movement has caused injuries and hardship. Your
-              donation will provide medical aid and support to those affected.
-              Every contribution helps their recovery. Please consider donating
-              to support them in this time of need.
+              The recent Quota movement has resulted in significant injuries and
+              hardships for many in our community. Your donation will provide
+              essential medical aid and support to those affected. Every
+              contribution, no matter how small, helps facilitate their
+              recovery. Please consider donating to assist those in need during
+              this challenging time. Together, we can make a meaningful
+              difference in their lives.
             </p>
 
             <!-- Input and Button -->
@@ -231,11 +240,17 @@
           </div>
         </div>
       </div>
+
+      <!-- History -->
+      <div id="historySection" class="hidden">
+        <h3>History Section</h3>
+      </div>
     </main>
     <footer class="bg-colorBg py-4 mt-8">
       <p class="text-center">© 2023, Donate Bangladesh. All right reserved.</p>
     </footer>
 
+    <script src="js/featurs.js"></script>
     <script src="js/utilities.js"></script>
     <script src="js/blog.js"></script>
   </body>
