@@ -1,5 +1,3 @@
-// feature.js
-
 // Toggle button for Donation Section
 document.getElementById('btnShowDonation')
     .addEventListener('click', function () {
