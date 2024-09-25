@@ -66,7 +66,7 @@ function addHistory(id, donationAmount, donationTitle) {
     div.className = "p-4 border border-gray-300 hover:border-primary rounded-lg mb-2";
 
     const h3 = document.createElement('h3');
-    h3.innerText = `${donationAmount} BDT is donated to the ${donationTitle}`;
+    h3.innerText = `${donationAmount} BDT is donated ${donationTitle}`;
     h3.className = "mb-2 text-xl font-bold";
     div.appendChild(h3);
 
