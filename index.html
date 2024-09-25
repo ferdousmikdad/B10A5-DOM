@@ -60,7 +60,12 @@
           <!-- Donated need amount -->
           <div class="flex justify-center items-center">
             <img class="mr-2" src="assets/coin.png" alt="" />
-            <h3 class="text-xl text-gray-500 font-semibold">5500 BDT</h3>
+            <h3
+              id="account-balance"
+              class="text-xl text-gray-500 font-semibold"
+            >
+              5500 BDT
+            </h3>
           </div>
         </div>
       </nav>
@@ -243,10 +248,28 @@
         </div>
       </div>
 
+      <!-- Modal -->
+      <dialog
+        id="donationModal"
+        class="modal modal-bottom sm:modal-middle z-50"
+      >
+        <div class="modal-box flex flex-col justify-center items-center">
+          <h2 id="modal-heading" class="text-3xl font-bold mb-4">Congrats!</h2>
+          <img src="assets/coin.png" alt="coin" />
+          <p class="py-4">You have Donated for Humankind</p>
+          <h3 class="text-xl font-bold">Successfully</h3>
+          <div class="modal-action">
+            <form method="dialog">
+              <button id="closeModal" class="btn hover:bg-primary">
+                close confirmation
+              </button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
       <!-- History -->
-      <div id="historySection" class="hidden">
-        <h3>History Section</h3>
-      </div>
+      <div id="historySection" class="hidden"></div>
     </main>
     <footer class="bg-colorBg py-4 mt-8">
       <p class="text-center">© 2023, Donate Bangladesh. All right reserved.</p>
